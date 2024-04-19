@@ -2,8 +2,8 @@
 
 function numero_aleatorio(){
 	$r = (float) 100;
-	$tstamp1=(float) microtime()*$r;
-	$tstamp2=(float) microtime()*$r;
+	$tstamp1=(float) time()*$r;
+	$tstamp2=(float) time()*$r;
 	$a = (int) sqrt($tstamp1*$tstamp1 +$tstamp2*$tstamp2);
   return (float) ($a/($r^4));
 }
